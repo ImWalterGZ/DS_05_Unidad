@@ -9,17 +9,18 @@ public class App {
         TreePrinter printer = new TreePrinter<>();
 
         tree.add(10);
-        tree.add(9);
-        tree.add(8);
         tree.add(7);
-        tree.add(6);
-
+        tree.add(12);
+        tree.add(3);
+        tree.add(4);
+        tree.add(8);
+        tree.add(15);
 
         int count = operator.countNodes(tree.getRoot());
-        System.out.println(count);
+        System.out.println("Cantidad de nodos: " + count);
 
         int height = operator.findAltura(tree.getRoot());
-        System.out.println(height);
+        System.out.println("Altura del arbol: " + height);
 
 
         tree.treePrinter();
